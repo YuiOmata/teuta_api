@@ -2,10 +2,12 @@ Rails.application.routes.draw do
 
   resources :users
 
-  root 'users#index'
+  #root 'users#index'
 
 
-  #match "/users" => "users#index", :via => :get
+  match "/users/getRanc" => "users#index", via: :get
+
+  match "/users/create" => "users#setRanc", via: :post
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
