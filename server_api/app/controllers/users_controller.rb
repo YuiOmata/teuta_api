@@ -1,7 +1,10 @@
 class UsersController < ApplicationController
 
   def index
-    @users = User.all
+    render json: User.all.order(score: :desc)
   end
 
+  def set
+    
+  end
 end
