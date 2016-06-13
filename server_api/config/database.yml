@@ -21,9 +21,9 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: postgresql
-  encoding: utf-8
-#  username: a5814023@aoyama.com
-#  password: sakutansakutan
-  pool: 5
+  adapter: postgresql
+  encoding: utf8
+  database: dbgreukvrjto5s
+  port: 5432
+  username: ecqrufasqhckxj
+  password: e3N7-n3D3VEireofIJdifmIxLI
