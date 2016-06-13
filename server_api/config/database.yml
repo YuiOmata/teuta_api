@@ -23,5 +23,7 @@ test:
 production:
   <<: *default
   database: postgresql
-  encoding: unicode
+  encoding: utf-8
+#  username: a5814023@aoyama.com
+#  password: sakutansakutan
   pool: 5
