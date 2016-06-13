@@ -5,8 +5,9 @@ class UsersController < ApplicationController
   end
 
   def setRanc
-    name = params.require(:name)
-    score = params.require(:score)
-    render User.create! name: name, score: score
+    render json: User.all.order(score: :desc)
+  #   name = params.require(:name)
+  #   score = params.require(:score)
+  #   render User.create! name: name, score: score
   end
 end
