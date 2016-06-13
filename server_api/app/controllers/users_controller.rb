@@ -4,10 +4,6 @@ class UsersController < ApplicationController
     render json: User.all.order(score: :desc)
   end
 
-  # def show
-  #   render json: User.all.order(score: :desc)
-  # end
-
   def setRanc
     name = params.require(:name)
     score = params.require(:score)
