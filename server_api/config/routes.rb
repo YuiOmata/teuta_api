@@ -2,10 +2,10 @@ Rails.application.routes.draw do
 
   #resources :users
 
-  root 'users#index'
+  #root 'users#index'
   get '/users/getRanc' => 'users#index'
 
-  post "/users/setRanc" => "users#setRanc"
+  get "/users/setRanc" => "users#setRanc"
 
   #match "/users/getRanc" => "users#index", via: :get
 
