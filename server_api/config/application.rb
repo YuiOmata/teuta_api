@@ -33,7 +33,7 @@ module ServerApi
       end
     end
 
-    config.api_only = false
+    config.api_only = true
 
   end
 end

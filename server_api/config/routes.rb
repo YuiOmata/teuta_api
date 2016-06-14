@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   #root 'users#index'
   get '/users/getRank' => 'users#index'
 
+  #post "/users/setRank" => "users#setRank"
+
   post "/users/setRank" => "users#setRank"
+
 
   #post "/users/test" => "users#test"
 
