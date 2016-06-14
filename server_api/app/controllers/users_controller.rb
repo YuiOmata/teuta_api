@@ -4,10 +4,27 @@ class UsersController < ApplicationController
     render json: User.all.order(score: :desc)
   end
 
-  def setRanc
-    render json: User.all.order(score: :desc)
-  #   name = params.require(:name)
-  #   score = params.require(:score)
-  #   render User.create! name: name, score: score
+  def setRank
+
+    # name = params.require(:name)
+    # score = params.require(:score)
+
+
+    # new_user =  User.create! name: name, score: score
+    #
+    # render new_user
+
+    # user = User.new(name: "taso", score: 321)
+    # resilt = user.save
+    # render :json => user
+  end
+
+  def test
+    params.require(:data).permit(:name, :score)
+
+    user = User.new
+    user.name = params['user']['name']
+    user.score = params['user']['score']
+    user.save
   end
 end
