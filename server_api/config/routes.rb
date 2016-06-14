@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   #root 'users#index'
   get '/users/getRank' => 'users#index'
 
-  get "/users/setRank/:id" => "users#setRank"
+  get "/users/setRank" => "users#setRank"
 
   post "/users/test" => "users#test"
 

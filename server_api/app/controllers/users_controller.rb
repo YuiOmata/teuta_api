@@ -6,11 +6,9 @@ class UsersController < ApplicationController
 
   def setRank
 
-    # name = params.require(:name)
-    # score = params.require(:score)
-
-
-    # new_user =  User.create! name: name, score: score
+    name = params.require(:name)
+    score = params.require(:score)
+    new_user =  User.create! name: name, score: score
     #
     # render new_user
 
@@ -20,11 +18,11 @@ class UsersController < ApplicationController
   end
 
   def test
-    params.require(:data).permit(:name, :score)
+    # params.require(:data).permit(:name, :score)
 
     user = User.new
-    user.name = params['user']['name']
-    user.score = params['user']['score']
+    user.name = "test-ok"
+    user.score = 234
     user.save
   end
 end
