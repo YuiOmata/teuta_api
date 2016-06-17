@@ -1,20 +1,9 @@
 Rails.application.routes.draw do
 
-  #resources :users
-
-  #root 'users#index'
   get '/users/getRank' => 'users#index'
-
-  #post "/users/setRank" => "users#setRank"
 
   post "/users/setRank" => "users#setRank"
 
-
-  #post "/users/test" => "users#test"
-
-  #match "/users/getRanc" => "users#index", via: :get
-
-  #match "/users/create" => "users#setRanc", via: :post
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
